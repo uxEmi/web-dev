@@ -1,0 +1,105 @@
+* ,*::after,*::before{
+    box-sizing: border-box;
+    font-family: sans-serif,Helvetica;
+    margin: 0;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    background: linear-gradient(white 40% ,gray 70% ,rgb(58, 56, 56) 100%);
+    height: 100vh;
+}
+.text{
+    height: 100px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    color:white ;
+    font-size: 3rem;
+    display: flex;
+    background: rgb(105, 31, 105);
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 50px;
+}
+
+.add{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    font-size: 2rem;
+    border-radius: 10%;
+}
+
+.overlay{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.task{
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.modal{
+    position: absolute;
+    height: 400px;
+    width: 500px;
+    background-color: white;
+    top: 180px;
+    left: 680px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+    border: 2px gray solid;
+}
+
+#task{
+    font-size: 1rem;
+}
+
+.see{
+    width: 200px;
+    height: 200px;
+    background-color: gray;
+    font-size: 2rem;
+    border-radius: 10%;
+}
+
+.hidden{
+    display: none;
+}
+
+/*
+#1e1e2f
+#2c2c3c
+#e0e0e0
+*/

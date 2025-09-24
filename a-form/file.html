@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">  
+    
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1 id="title">Amicus Summer Camp</h1>
+    <p id="description">This is a form for registration for the Amicus summercamp 2026</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" for="name">Name <input id="name" type="text" placeholder="Enter your name" required></label>
+        <label id="email-label" for="email">Email<input name="email" id="email" type="email" placeholder="Enter your email" required></label>
+        <label id="number-label" for="number">Age<input name="age" id="number" type="number" min="13" max="120" placeholder="Age"></label>
+       </fieldset>
+       <fieldset>
+       <label for="dropdown">What is the activity that you are looking for?
+        <select id="dropdown" name="options">
+        <option value="">help us make the best summer of your life</option>
+        <option value="1">Atv</option>
+        <option value="2">Hiking</option>
+        <option value="3">Football</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+        <legend>What bootcamp will you choose?</legend>
+        <label for="b1"><input name="bootcamp" id="b1" type="radio" value="AI" checked>Data science and AI</label>
+        <label for="b2"><input name="bootcamp" id="b2" type="radio" value="Hacker">Cybersecurity</label>
+      </fieldset>
+      <fieldset>
+        <legend>What other topics would you also want to see in the camp?</legend>
+        <label for="c1"><input id="c1" name="c1" type="checkbox" value="gooner">Front end</label>
+        <label for="c2"><input id="c2" name="c2" type="checkbox" value="sigma">Devops</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Feel free to share some ideas</legend>
+        <label for="t"> <textarea id="t" placeholder="Anything is welcomed:"></textarea></label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>

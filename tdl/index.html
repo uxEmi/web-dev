@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To-Do-List</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <p class="text">Just do it</p>
+        </header>
+        <main>
+            <button class="see">Press to see the tasks</button>
+            <button class="add">Press to add new tasks</button>
+            <div class="modal hidden">
+                <textarea name="task" id="task" rows="10" cols="30" placeholder="Put your task in here"></textarea>
+                <input class="submit" type="submit">
+            </div>
+            <div class="overlay hidden"></div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
